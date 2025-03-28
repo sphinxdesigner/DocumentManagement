@@ -7,8 +7,8 @@
   border-radius: 40px !important;
   max-width: 26.1875rem;
 
-  a{
-    color: #215294 ;
+  a {
+    color: #215294;
     text-decoration: none;
   }
 }
@@ -50,38 +50,47 @@
   color: #215294;
 }
 
-.form-switch .form-check-input{
-    width: 3.5em;
+.form-switch .form-check-input {
+  width: 3.5em;
 }
 
-.form-check-input{
-  
-    background-color: #F0F4F7;
-    
-    height: 2em;
+.form-check-input {
+  background-color: #f0f4f7;
+
+  height: 2em;
 }
 
-.form-check{
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .form-check-input:checked {
-    background-color: #388E3C;
+  background-color: #388e3c;
 }
 
 body {
-    background-image: url("../../assets/images/loginbg.svg"); 
-    background-size: cover;
-    background-repeat: no-repeat; 
-    background-position: center 100%;
-    background-attachment: fixed; 
+  background-image: url("../../assets/images/loginbg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 100%;
+  background-attachment: fixed;
+}
+
+@media screen and (min-width: 768px) {
+  .right-login-col {
+    height: 100vh;
   }
-  
-  @media screen and (min-width: 768px) {
-    .right-login-col{
-height: 100vh;
-    }
-    
-  }
+}
+
+.eye-icon {
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.password.form-control{
+  padding-right: 2.5rem !important;
+}

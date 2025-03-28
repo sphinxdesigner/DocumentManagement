@@ -54,7 +54,7 @@
 }
 
 .form-check-input {
-  background-color: #F0F4F7;
+  background-color: #f0f4f7;
   height: 2em;
 }
 
@@ -65,7 +65,7 @@
 }
 
 .form-check-input:checked {
-  background-color: #388E3C;
+  background-color: #388e3c;
 }
 
 body {
@@ -80,4 +80,14 @@ body {
   .right-login-col {
     height: 100vh;
   }
+}
+.eye-icon {
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.password.form-control {
+  padding-right: 2.5rem !important;
 }/*# sourceMappingURL=login.css.map */
