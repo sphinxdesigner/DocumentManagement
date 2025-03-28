@@ -213,9 +213,10 @@ main {
   color: #215294;
   border: 1px solid #215294;
 }
-.btn-outline-primary:hover, .btn-outline-primary.show {
-  background-color: #215294;
-  color: white;
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+  border: 1px solid #215294;
+  background-color: transparent;
+  color: #215294;
 }
 
 .btn-outline-light {
@@ -262,6 +263,17 @@ main {
 .form-floating > .form-select {
   height: 3rem;
   min-height: 3rem;
+}
+
+.form-floating > .form-control-plaintext ~ label,
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label {
+  transform: scale(1) translateY(-0.5rem) translateX(0.15rem);
+}
+
+.form-floating > label {
+  padding: 0.5rem;
 }
 
 .form-control {

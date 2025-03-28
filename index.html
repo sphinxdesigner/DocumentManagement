@@ -11,9 +11,17 @@
     <header>
       <div class="top-header">
         <div class="d-flex align-items-center gap-3 justify-content-between">
-          <div class="d-inline-flex gap-2 ">
-            <img src="assets/icons/logo.svg" alt="logo" class="logo flex-shrink-0" />
-            <img src="assets/icons/logo_text.svg" alt="logo" class="logo flex-shrink-0 d-none d-md-block" />
+          <div class="d-inline-flex gap-2">
+            <img
+              src="assets/icons/logo.svg"
+              alt="logo"
+              class="logo flex-shrink-0"
+            />
+            <img
+              src="assets/icons/logo_text.svg"
+              alt="logo"
+              class="logo flex-shrink-0 d-none d-md-block"
+            />
           </div>
           <div class="position-relative">
             <input
@@ -28,13 +36,12 @@
             />
           </div>
           <div class="d-flex gap-1 align-items-center">
-      
-              <button class="btn rounded-btn btn-outline-light">
-                <img
-                  src="assets/icons/notification_icon.svg"
-                  alt="Notification Icon"
-                />
-              </button>
+            <button class="btn rounded-btn btn-outline-light">
+              <img
+                src="assets/icons/notification_icon.svg"
+                alt="Notification Icon"
+              />
+            </button>
 
             <div class="dropdown">
               <button
@@ -71,185 +78,6 @@
             </a>
           </li>
         </ul>
-        <div class="d-flex align-items-center gap-3 flex-wrap mb-1 mb-md-0">
-          <button
-            class="btn btn-outline-light flex-shrink-0"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasWithBothOptions"
-            aria-controls="offcanvasWithBothOptions"
-          >
-            <img src="assets/icons/upload_document.svg" alt="upload" />Upload
-            Document
-          </button>
-
-          <div class="dropdown">
-            <button
-              class="btn btn-outline-light dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <img src="assets/icons/filter.svg" alt="filter" />Filter
-              <img src="assets/icons/chevron_dropdown.svg" alt="dropdown" />
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end custom-filters">
-              <div
-                class="d-flex align-items-center gap-2 border-bottom pb-3 mb-3 justify-content-between"
-              >
-                <h3 class="m-0 header-title">Filters</h3>
-                <button
-                  type="button"
-                  class="btn-close"
-                  aria-label="Close"
-                  id="close-dropdown"
-                ></button>
-              </div>
-              <div class="scroll-filter-wrapper custom-floating-labels">
-                <div class="row g-3">
-                  <!-- Document Title -->
-                  <div class="col-md-12 col-lg-4">
-                    <div class="form-floating">
-                      <select class="form-select">
-                        <option selected>All</option>
-                        <option value="1">Custom</option>
-                      </select>
-                      <label>Document Title</label>
-                    </div>
-                  </div>
-
-                  <!-- Document No -->
-                  <div class="col-md-12 col-lg-4">
-                    <div class="form-floating">
-                      <select class="form-select">
-                        <option selected>All</option>
-                        <option value="1">Custom</option>
-                      </select>
-                      <label>Document No</label>
-                    </div>
-                  </div>
-
-                  <!-- Revision -->
-                  <div class="col-md-12 col-lg-4">
-                    <div class="form-floating">
-                      <select class="form-select">
-                        <option selected>All</option>
-                        <option value="1">Custom</option>
-                      </select>
-                      <label>Revision</label>
-                    </div>
-                  </div>
-
-                  <!-- Upload Category -->
-                  <div class="col-md-12 col-lg-4">
-                    <div class="form-floating">
-                      <select class="form-select">
-                        <option selected>All</option>
-                        <option value="1">Custom</option>
-                      </select>
-                      <label>Upload Category</label>
-                    </div>
-                  </div>
-
-                  <!-- Tag No -->
-                  <div class="col-md-12 col-lg-4">
-                    <div class="form-floating">
-                      <select class="form-select">
-                        <option selected>All</option>
-                        <option value="1">Custom</option>
-                      </select>
-                      <label>Tag No</label>
-                    </div>
-                  </div>
-
-                  <!-- Department -->
-                  <div class="col-md-12 col-lg-4">
-                    <div class="form-floating">
-                      <select class="form-select">
-                        <option selected>All</option>
-                        <option value="1">Custom</option>
-                      </select>
-                      <label>Department</label>
-                    </div>
-                  </div>
-
-                  <!-- Upload Date -->
-                  <div class="col-md-12 col-lg-4">
-                    <div class="form-floating position-relative">
-                      <input type="date" class="form-control" />
-                      <label>Upload Date</label>
-                    </div>
-                  </div>
-
-                  <!-- Approval Date -->
-                  <div class="col-md-12 col-lg-4">
-                    <div class="form-floating position-relative">
-                      <input type="date" class="form-control" />
-                      <label>Approval Date</label>
-                    </div>
-                  </div>
-
-                  <!-- Status -->
-                  <div class="col-md-12 col-lg-4">
-                    <div class="form-floating">
-                      <select class="form-select">
-                        <option selected>All</option>
-                        <option value="1">Custom</option>
-                      </select>
-                      <label>Status</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="d-flex align-items-center gap-2 border-top pt-3 mt-3 justify-content-end"
-              >
-                <button
-                  class="btn btn-outline-primary"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Cancel
-                </button>
-                <button
-                  class="btn btn-primary"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Apply
-                </button>
-              </div>
-            </ul>
-          </div>
-          <div class="dropdown">
-            <button
-              class="btn btn-outline-light dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <img
-                src="assets/icons/download_icon_h.svg"
-                alt="filter"
-              />Download
-              <img src="assets/icons/chevron_dropdown.svg" alt="dropdown" />
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end">
-              <li>
-                <a class="dropdown-item" href="#"
-                  ><img src="assets/icons/excel_icon.svg" alt="back" />Excel
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#"
-                  ><img src="assets/icons/pdf_icon.svg" alt="back" />PDF</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
       </nav>
     </header>
     <main>
@@ -265,287 +93,124 @@
             <thead>
               <tr>
                 <th scope="col">SI No.</th>
-                <th scope="col" class="text-center">
-                  <input
-                    class="custom form-check-input"
-                    type="checkbox"
-                    id="checkboxNoLabel"
-                    value=""
-                    aria-label="..."
-                  />
-                </th>
-                <th scope="col">Unit</th>
-                <th scope="col">Document Title & No.</th>
-                <th scope="col" class="text-center">Vender Doc.</th>
-                <th scope="col">Revised Doc.</th>
-                <th scope="col" class="text-center">Revision</th>
-                <th scope="col" class="text-center">Upload Category</th>
-                <th scope="col" class="text-center">Tag No.</th>
-                <th scope="col" class="text-center">Upload Date</th>
-                <th scope="col" class="text-center">Department</th>
-                <th scope="col" class="text-center">Approval Date</th>
-                <th scope="col">Status</th>
+                <th scope="col">PO Number</th>
+                <th scope="col">PO Name</th>
+                <th scope="col" class="text-center">PO Release Date</th>
+                <th scope="col" class="text-center">PO Expiry Date</th>
+                <th scope="col" class="text-center">Action</th>
               </tr>
             </thead>
             <tbody>
               <!-- Row 1 -->
               <tr>
                 <th scope="row">1</th>
+                <td>001</td>
+                <td>QuickPO</td>
+                <td class="text-center">20 Jan 2025</td>
+                <td class="text-center">20 Jan 2026</td>
                 <td class="text-center">
-                  <input
-                    class="custom form-check-input"
-                    type="checkbox"
-                    id="checkboxNoLabel"
-                    value=""
-                    aria-label="..."
-                  />
-                </td>
-                <td>510</td>
-                <td>
-                  <div class="d-flex align-items-center gap-1 mb-1">
-                    P&ID Steam: Purge System
-                  </div>
-                  <div class="d-flex align-items-center gap-1">
-                    <small class="text-muted">3003208-PS-PID</small>
-                  </div>
-                </td>
-                <td class="text-center">
-                  <button class="btn blue-btn border-0">
-                    <img
-                      src="assets/icons/download_icon.svg"
-                      alt="download"
-                    />Download
-                  </button>
-                </td>
-                <td class="text-center">
-                  <button class="btn blue-btn border-0">
-                    <img
-                      src="assets/icons/download_icon.svg"
-                      alt="download"
-                    />Download
-                  </button>
-                  <button class="btn blue-btn border-0">
-                    <img src="assets/icons/comment_icon.svg" alt="view" />View
-                  </button>
-                </td>
-                <td class="text-center">4</td>
-                <td class="text-center">Scheduled</td>
-                <td class="text-center">NA</td>
-                <td class="text-center">30 Jan 2025</td>
-                <td class="text-center">PIPING</td>
-                <td class="text-center">30 Jan 2025</td>
-                <td>
-                  <div class="d-flex align-items-center gap-1 status">
-                    <span class="indicator success"></span> Approved
-                  </div>
+                  <a class="btn btn-outline-primary" href="polist.html"
+                    ><img src="assets/icons/eye_icon.svg" alt="view" />
+                    Details
+                  </a>
                 </td>
               </tr>
               <!-- Row 2 -->
               <tr>
                 <th scope="row">2</th>
+                <td>002</td>
+                <td>SwiftOrder</td>
+                <td class="text-center">20 Feb 2025</td>
+                <td class="text-center">20 Feb 2026</td>
                 <td class="text-center">
-                  <input
-                    class="custom form-check-input"
-                    type="checkbox"
-                    id="checkboxNoLabel"
-                    value=""
-                    aria-label="..."
-                  />
-                </td>
-                <td>510</td>
-                <td>
-                  <div class="d-flex align-items-center gap-1 mb-1">
-                    P&ID Steam: Purge System
-                  </div>
-                  <div class="d-flex align-items-center gap-1">
-                    <small class="text-muted">3003208-PS-PID</small>
-                  </div>
-                </td>
-                <td class="text-center">
-                  <button class="btn blue-btn border-0">
-                    <img
-                      src="assets/icons/download_icon.svg"
-                      alt="download"
-                    />Download
-                  </button>
-                </td>
-                <td class="text-center">
-                  <button class="btn blue-btn border-0">
-                    <img
-                      src="assets/icons/download_icon.svg"
-                      alt="download"
-                    />Download
-                  </button>
-                  <button class="btn blue-btn border-0">
-                    <img src="assets/icons/comment_icon.svg" alt="view" />View
-                  </button>
-                </td>
-                <td class="text-center">4</td>
-                <td class="text-center">Scheduled</td>
-                <td class="text-center">NA</td>
-                <td class="text-center">29 Jan 2025</td>
-                <td class="text-center">PIPING</td>
-                <td class="text-center">29 Jan 2025</td>
-                <td>
-                  <div class="d-flex align-items-center gap-1 status">
-                    <span class="indicator danger"></span> Revise and Resubmit
-                  </div>
+                  <a class="btn btn-outline-primary" href="polist.html"
+                    ><img src="assets/icons/eye_icon.svg" alt="view" />
+                    Details
+                  </a>
                 </td>
               </tr>
               <!-- Row 3 -->
               <tr>
                 <th scope="row">3</th>
+                <td>003</td>
+                <td>ProcureEase</td>
+                <td class="text-center">20 Mar 2025</td>
+                <td class="text-center">20 Mar 2026</td>
                 <td class="text-center">
-                  <input
-                    class="custom form-check-input"
-                    type="checkbox"
-                    id="checkboxNoLabel"
-                    value=""
-                    aria-label="..."
-                  />
-                </td>
-                <td>510</td>
-                <td>
-                  <div class="d-flex align-items-center gap-1 mb-1">
-                    P&ID Steam: Purge System
-                  </div>
-                  <div class="d-flex align-items-center gap-1">
-                    <small class="text-muted">3003208-PS-PID</small>
-                  </div>
-                </td>
-                <td class="text-center">
-                  <button class="btn blue-btn border-0">
-                    <img
-                      src="assets/icons/download_icon.svg"
-                      alt="download"
-                    />Download
-                  </button>
-                </td>
-                <td class="text-center">
-                  <button class="btn blue-btn border-0">
-                    <img
-                      src="assets/icons/download_icon.svg"
-                      alt="download"
-                    />Download
-                  </button>
-                  <button class="btn blue-btn border-0">
-                    <img src="assets/icons/comment_icon.svg" alt="view" />View
-                  </button>
-                </td>
-                <td class="text-center">4</td>
-                <td class="text-center">Scheduled</td>
-                <td class="text-center">NA</td>
-                <td class="text-center">28 Jan 2025</td>
-                <td class="text-center">PIPING</td>
-                <td class="text-center">28 Jan 2025</td>
-                <td>
-                  <div class="d-flex align-items-center gap-1 status">
-                    <span class="indicator info"></span> Comments
-                  </div>
+                  <a class="btn btn-outline-primary" href="polist.html"
+                    ><img src="assets/icons/eye_icon.svg" alt="view" />
+                    Details
+                  </a>
                 </td>
               </tr>
               <!-- Row 4 -->
               <tr>
                 <th scope="row">4</th>
+                <td>004</td>
+                <td>SmartBuy PO</td>
+                <td class="text-center">20 Apr 2025</td>
+                <td class="text-center">20 Apr 2026</td>
                 <td class="text-center">
-                  <input
-                    class="custom form-check-input"
-                    type="checkbox"
-                    id="checkboxNoLabel"
-                    value=""
-                    aria-label="..."
-                  />
-                </td>
-                <td>510</td>
-                <td>
-                  <div class="d-flex align-items-center gap-1 mb-1">
-                    P&ID Steam: Purge System
-                  </div>
-                  <div class="d-flex align-items-center gap-1">
-                    <small class="text-muted">3003208-PS-PID</small>
-                  </div>
-                </td>
-                <td class="text-center">
-                  <button class="btn blue-btn border-0">
-                    <img
-                      src="assets/icons/download_icon.svg"
-                      alt="download"
-                    />Download
-                  </button>
-                </td>
-                <td class="text-center">
-                  <button class="btn blue-btn border-0">
-                    <img
-                      src="assets/icons/download_icon.svg"
-                      alt="download"
-                    />Download
-                  </button>
-                  <button class="btn blue-btn border-0">
-                    <img src="assets/icons/comment_icon.svg" alt="view" />View
-                  </button>
-                </td>
-                <td class="text-center">4</td>
-                <td class="text-center">Scheduled</td>
-                <td class="text-center">NA</td>
-                <td class="text-center">27 Jan 2025</td>
-                <td class="text-center">PIPING</td>
-                <td class="text-center">27 Jan 2025</td>
-                <td>
-                  <div class="d-flex align-items-center gap-1 status">
-                    <span class="indicator info"></span> Comments
-                  </div>
+                  <a class="btn btn-outline-primary" href="polist.html"
+                    ><img src="assets/icons/eye_icon.svg" alt="view" />
+                    Details
+                  </a>
                 </td>
               </tr>
               <!-- Row 5 -->
               <tr>
                 <th scope="row">5</th>
+                <td>005</td>
+                <td>BuyFlow</td>
+                <td class="text-center">20 May 2025</td>
+                <td class="text-center">20 May 2026</td>
                 <td class="text-center">
-                  <input
-                    class="custom form-check-input"
-                    type="checkbox"
-                    id="checkboxNoLabel"
-                    value=""
-                    aria-label="..."
-                  />
+                  <a class="btn btn-outline-primary" href="polist.html"
+                    ><img src="assets/icons/eye_icon.svg" alt="view" />
+                    Details
+                  </a>
                 </td>
-                <td>510</td>
-                <td>
-                  <div class="d-flex align-items-center gap-1 mb-1">
-                    P&ID Steam: Purge System
-                  </div>
-                  <div class="d-flex align-items-center gap-1">
-                    <small class="text-muted">3003208-PS-PID</small>
-                  </div>
-                </td>
+              </tr>
+              <!-- Row 6 -->
+              <tr>
+                <th scope="row">6</th>
+                <td>006</td>
+                <td>POTracker</td>
+                <td class="text-center">20 Jun 2025</td>
+                <td class="text-center">20 Jun 2026</td>
                 <td class="text-center">
-                  <button class="btn blue-btn border-0">
-                    <img
-                      src="assets/icons/download_icon.svg"
-                      alt="download"
-                    />Download
-                  </button>
+                  <a class="btn btn-outline-primary" href="polist.html"
+                    ><img src="assets/icons/eye_icon.svg" alt="view" />
+                    Details
+                  </a>
                 </td>
+              </tr>
+              <!-- Row 7 -->
+              <tr>
+                <th scope="row">7</th>
+                <td>007</td>
+                <td>SureOrder</td>
+                <td class="text-center">20 Jul 2025</td>
+                <td class="text-center">20 Jul 2026</td>
                 <td class="text-center">
-                  <button class="btn blue-btn border-0">
-                    <img
-                      src="assets/icons/download_icon.svg"
-                      alt="download"
-                    />Download
-                  </button>
-                  <button class="btn blue-btn border-0">
-                    <img src="assets/icons/comment_icon.svg" alt="view" />View
-                  </button>
+                  <a class="btn btn-outline-primary" href="polist.html"
+                    ><img src="assets/icons/eye_icon.svg" alt="view" />
+                    Details
+                  </a>
                 </td>
-                <td class="text-center">4</td>
-                <td class="text-center">Scheduled</td>
-                <td class="text-center">NA</td>
-                <td class="text-center">26 Jan 2025</td>
-                <td class="text-center">PIPING</td>
-                <td class="text-center">26 Jan 2025</td>
-                <td>
-                  <div class="d-flex align-items-center gap-1 status">
-                    <span class="indicator info"></span> Comments
-                  </div>
+              </tr>
+              <!-- Row 8 -->
+              <tr>
+                <th scope="row">8</th>
+                <td>008</td>
+                <td>PureProcure</td>
+                <td class="text-center">20 Aug 2025</td>
+                <td class="text-center">20 Aug 2026</td>
+                <td class="text-center">
+                  <a class="btn btn-outline-primary" href="polist.html"
+                    ><img src="assets/icons/eye_icon.svg" alt="view" />
+                    Details
+                  </a>
                 </td>
               </tr>
             </tbody>
