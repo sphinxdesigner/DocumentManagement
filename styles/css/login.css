@@ -72,6 +72,12 @@ body {
   background-image: url("../../assets/images/loginbg.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center 50%;
+  background-position: center 100%;
   background-attachment: fixed;
+}
+
+@media screen and (min-width: 768px) {
+  .right-login-col {
+    height: 100vh;
+  }
 }/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Management Portal</title>
+    <link rel="stylesheet" href="styles/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <div class="d-flex align-items-center gap-3 justify-content-between">
+          <div class="d-inline-flex gap-2">
+            <img
+              src="assets/icons/logo.svg"
+              alt="logo"
+              class="logo flex-shrink-0"
+            />
+            <img
+              src="assets/icons/logo_text.svg"
+              alt="logo"
+              class="logo flex-shrink-0 d-none d-md-block"
+            />
+          </div>
+          <div class="position-relative">
+            <input
+              type="text"
+              class="form-control search"
+              placeholder="Search"
+            />
+            <img
+              src="assets/icons/search.svg"
+              alt="search Icon"
+              class="position-absolute search-icon"
+            />
+          </div>
+          <div class="d-flex gap-1 align-items-center">
+            <button class="btn rounded-btn btn-outline-light">
+              <img
+                src="assets/icons/notification_icon.svg"
+                alt="Notification Icon"
+              />
+            </button>
+
+            <div class="dropdown">
+              <button
+                class="btn p-0 border-0"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="rounded-btn me-2 overflow-hidden">
+                  <img src="assets/images/user1.png" alt="User" height="48" />
+                </div>
+
+                <img src="assets/icons/chevron_dropdown.svg" alt="dropdown" />
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav
+        class="nav-header d-flex align-items-center flex-wrap justify-content-md-between justify-content-center"
+      >
+        <ul class="nav custom-tabs mb-4 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img src="assets/icons/dashboard.svg" alt="Dashboard Icon" />
+              Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <img src="assets/icons/dashboard.svg" alt="Dashboard Icon" />
+              Purchase Order
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      
+      <section class="table-wrapper">
+        <div class="table-responsive">
+          <table class="table custom-table table-borderless">
+            <thead>
+              <tr>
+                <th scope="col">SI No.</th>
+                <th scope="col">PO Number</th>
+                <th scope="col">PO Name</th>
+                <th scope="col" class="text-center">PO Release Date</th>
+                <th scope="col" class="text-center">PO Expiry Date</th>
+                <th scope="col" class="text-center">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Row 1 -->
+              <tr>
+                <th scope="row">1</th>
+                <td>001</td>
+                <td>QuickPO</td>
+                <td class="text-center">20 Jan 2025</td>
+                <td class="text-center">20 Jan 2026</td>
+                <td class="text-center">
+                  <a class="btn btn-outline-primary" href="polist.html"
+                    ><img src="assets/icons/eye_icon.svg" alt="view" />
+                    Details
+                  </a>
+                </td>
+              </tr>
+              <!-- Row 2 -->
+              <tr>
+                <th scope="row">2</th>
+                <td>002</td>
+                <td>SwiftOrder</td>
+                <td class="text-center">20 Feb 2025</td>
+                <td class="text-center">20 Feb 2026</td>
+                <td class="text-center">
+                  <a class="btn btn-outline-primary" href="polist.html"
+                    ><img src="assets/icons/eye_icon.svg" alt="view" />
+                    Details
+                  </a>
+                </td>
+              </tr>
+              <!-- Row 3 -->
+              <tr>
+                <th scope="row">3</th>
+                <td>003</td>
+                <td>ProcureEase</td>
+                <td class="text-center">20 Mar 2025</td>
+                <td class="text-center">20 Mar 2026</td>
+                <td class="text-center">
+                  <a class="btn btn-outline-primary" href="polist.html"
+                    ><img src="assets/icons/eye_icon.svg" alt="view" />
+                    Details
+                  </a>
+                </td>
+              </tr>
+              <!-- Row 4 -->
+              <tr>
+                <th scope="row">4</th>
+                <td>004</td>
+                <td>SmartBuy PO</td>
+                <td class="text-center">20 Apr 2025</td>
+                <td class="text-center">20 Apr 2026</td>
+                <td class="text-center">
+                  <a class="btn btn-outline-primary" href="polist.html"
+                    ><img src="assets/icons/eye_icon.svg" alt="view" />
+                    Details
+                  </a>
+                </td>
+              </tr>
+              <!-- Row 5 -->
+              <tr>
+                <th scope="row">5</th>
+                <td>005</td>
+                <td>BuyFlow</td>
+                <td class="text-center">20 May 2025</td>
+                <td class="text-center">20 May 2026</td>
+                <td class="text-center">
+                  <a class="btn btn-outline-primary" href="polist.html"
+                    ><img src="assets/icons/eye_icon.svg" alt="view" />
+                    Details
+                  </a>
+                </td>
+              </tr>
+              <!-- Row 6 -->
+              <tr>
+                <th scope="row">6</th>
+                <td>006</td>
+                <td>POTracker</td>
+                <td class="text-center">20 Jun 2025</td>
+                <td class="text-center">20 Jun 2026</td>
+                <td class="text-center">
+                  <a class="btn btn-outline-primary" href="polist.html"
+                    ><img src="assets/icons/eye_icon.svg" alt="view" />
+                    Details
+                  </a>
+                </td>
+              </tr>
+              <!-- Row 7 -->
+              <tr>
+                <th scope="row">7</th>
+                <td>007</td>
+                <td>SureOrder</td>
+                <td class="text-center">20 Jul 2025</td>
+                <td class="text-center">20 Jul 2026</td>
+                <td class="text-center">
+                  <a class="btn btn-outline-primary" href="polist.html"
+                    ><img src="assets/icons/eye_icon.svg" alt="view" />
+                    Details
+                  </a>
+                </td>
+              </tr>
+              <!-- Row 8 -->
+              <tr>
+                <th scope="row">8</th>
+                <td>008</td>
+                <td>PureProcure</td>
+                <td class="text-center">20 Aug 2025</td>
+                <td class="text-center">20 Aug 2026</td>
+                <td class="text-center">
+                  <a class="btn btn-outline-primary" href="polist.html"
+                    ><img src="assets/icons/eye_icon.svg" alt="view" />
+                    Details
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div
+          class="d-flex align-items-center table-pagination flex-wrap gap-3 justify-content-md-start justify-content-center"
+        >
+          <span class="text-muted d-inline-flex align-items-center gap-2">
+            Show
+            <select class="form-select" aria-label="Default select example">
+              <option selected>--</option>
+              <option value="1" selected>8</option>
+              <option value="2">16</option>
+              <option value="3">24</option>
+            </select>
+            entries</span
+          >
+
+          <div
+            class="d-flex align-items-center ms-auto flex-wrap justify-content-md-start justify-content-center"
+          >
+            <span class="text-muted me-3 mb-3 mb-md-0"
+              >Showing 8 of 100 results</span
+            >
+            <ul class="pagination m-0 custom-pagination align-items-center">
+              <li class="page-item">
+                <a class="page-link">
+                  <img
+                    src="assets/icons/chevro_left.svg"
+                    alt="icon"
+                  />Previous</a
+                >
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#"
+                  >Next <img src="assets/icons/chevro_right.svg" alt="icon"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="d-flex flex-row justify-content-center align-items-center m-0"
+    >
+      <p>@Copyright all right reserved</p>
+    </footer>
+
+   
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
