@@ -27,6 +27,7 @@
   font-display: swap;
 }
 
+
 html {
 }
 
@@ -231,6 +232,8 @@ main {
 }
 
 .blue-btn {
+  padding-left: 0;
+  padding-right: 0;
   color: #215294 !important;
 }
 
@@ -281,7 +284,7 @@ main {
     &.danger {
       background: #ff0004;
     }
-    &.info {
+    &.warning {
       background: #ee7e22;
     }
   }

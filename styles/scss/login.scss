@@ -1,0 +1,81 @@
+.bg-blue {
+  background-color: #215294;
+}
+
+.login-card {
+  background: #ffffff !important;
+  border-radius: 40px !important;
+  max-width: 26.1875rem;
+
+  a{
+    color: #215294 ;
+    text-decoration: none;
+  }
+}
+
+.login-header {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 44px;
+  color: #000000;
+}
+
+.custom-tabs-login {
+  display: flex;
+  gap: 1rem;
+  border-bottom: 1px solid #dddddd;
+}
+
+.custom-tabs-login .nav-link {
+  display: flex;
+  align-items: center;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  position: relative;
+  padding: 0.75rem 0.5rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.custom-tabs-login .nav-link img {
+  margin-right: 0.25rem;
+}
+
+.custom-tabs-login .nav-link.active {
+  color: #215294;
+}
+
+.custom-tabs-login .nav-link:hover {
+  color: #215294;
+}
+
+.form-switch .form-check-input{
+    width: 3.5em;
+}
+
+.form-check-input{
+  
+    background-color: #F0F4F7;
+    
+    height: 2em;
+}
+
+.form-check{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.form-check-input:checked {
+    background-color: #388E3C;
+}
+
+body {
+    background-image: url("../../assets/images/loginbg.svg"); 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center 50%;
+    background-attachment: fixed; 
+  }
+  
