@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Management Portal</title>
+    <link rel="stylesheet" href="styles/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <div class="d-flex align-items-center gap-3 justify-content-between">
+          <div class="d-inline-flex gap-2 ">
+            <img src="assets/icons/logo.svg" alt="logo" class="logo flex-shrink-0" />
+            <img src="assets/icons/logo_text.svg" alt="logo" class="logo flex-shrink-0 d-none d-md-block" />
+          </div>
+          <div class="position-relative">
+            <input
+              type="text"
+              class="form-control search"
+              placeholder="Search"
+            />
+            <img
+              src="assets/icons/search.svg"
+              alt="search Icon"
+              class="position-absolute search-icon"
+            />
+          </div>
+          <div class="d-flex gap-1 align-items-center">
+      
+              <button class="btn rounded-btn btn-outline-light">
+                <img
+                  src="assets/icons/notification_icon.svg"
+                  alt="Notification Icon"
+                />
+              </button>
+
+            <div class="dropdown">
+              <button
+                class="btn p-0 border-0"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="rounded-btn me-2 overflow-hidden">
+                  <img src="assets/images/user1.png" alt="User" height="48" />
+                </div>
+
+                <img src="assets/icons/chevron_dropdown.svg" alt="dropdown" />
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav
+        class="nav-header d-flex align-items-center flex-wrap justify-content-md-between justify-content-center"
+      >
+        <ul class="nav custom-tabs mb-4 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img src="assets/icons/dashboard.svg" alt="Dashboard Icon" />
+              Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <img src="assets/icons/dashboard.svg" alt="Dashboard Icon" />
+              Purchase Order
+            </a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center gap-3 flex-wrap mb-1 mb-md-0">
+          <button
+            class="btn btn-outline-light flex-shrink-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions"
+          >
+            <img src="assets/icons/upload_document.svg" alt="upload" />Upload
+            Document
+          </button>
+
+          <div class="dropdown">
+            <button
+              class="btn btn-outline-light dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="assets/icons/filter.svg" alt="filter" />Filter
+              <img src="assets/icons/chevron_dropdown.svg" alt="dropdown" />
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end custom-filters">
+              <div
+                class="d-flex align-items-center gap-2 border-bottom pb-3 mb-3 justify-content-between"
+              >
+                <h3 class="m-0 header-title">Filters</h3>
+                <button
+                  type="button"
+                  class="btn-close"
+                  aria-label="Close"
+                  id="close-dropdown"
+                ></button>
+              </div>
+              <div class="scroll-filter-wrapper custom-floating-labels">
+                <div class="row g-3">
+                  <!-- Document Title -->
+                  <div class="col-md-12 col-lg-4">
+                    <div class="form-floating">
+                      <select class="form-select">
+                        <option selected>All</option>
+                        <option value="1">Custom</option>
+                      </select>
+                      <label>Document Title</label>
+                    </div>
+                  </div>
+
+                  <!-- Document No -->
+                  <div class="col-md-12 col-lg-4">
+                    <div class="form-floating">
+                      <select class="form-select">
+                        <option selected>All</option>
+                        <option value="1">Custom</option>
+                      </select>
+                      <label>Document No</label>
+                    </div>
+                  </div>
+
+                  <!-- Revision -->
+                  <div class="col-md-12 col-lg-4">
+                    <div class="form-floating">
+                      <select class="form-select">
+                        <option selected>All</option>
+                        <option value="1">Custom</option>
+                      </select>
+                      <label>Revision</label>
+                    </div>
+                  </div>
+
+                  <!-- Upload Category -->
+                  <div class="col-md-12 col-lg-4">
+                    <div class="form-floating">
+                      <select class="form-select">
+                        <option selected>All</option>
+                        <option value="1">Custom</option>
+                      </select>
+                      <label>Upload Category</label>
+                    </div>
+                  </div>
+
+                  <!-- Tag No -->
+                  <div class="col-md-12 col-lg-4">
+                    <div class="form-floating">
+                      <select class="form-select">
+                        <option selected>All</option>
+                        <option value="1">Custom</option>
+                      </select>
+                      <label>Tag No</label>
+                    </div>
+                  </div>
+
+                  <!-- Department -->
+                  <div class="col-md-12 col-lg-4">
+                    <div class="form-floating">
+                      <select class="form-select">
+                        <option selected>All</option>
+                        <option value="1">Custom</option>
+                      </select>
+                      <label>Department</label>
+                    </div>
+                  </div>
+
+                  <!-- Upload Date -->
+                  <div class="col-md-12 col-lg-4">
+                    <div class="form-floating position-relative">
+                      <input type="date" class="form-control" />
+                      <label>Upload Date</label>
+                    </div>
+                  </div>
+
+                  <!-- Approval Date -->
+                  <div class="col-md-12 col-lg-4">
+                    <div class="form-floating position-relative">
+                      <input type="date" class="form-control" />
+                      <label>Approval Date</label>
+                    </div>
+                  </div>
+
+                  <!-- Status -->
+                  <div class="col-md-12 col-lg-4">
+                    <div class="form-floating">
+                      <select class="form-select">
+                        <option selected>All</option>
+                        <option value="1">Custom</option>
+                      </select>
+                      <label>Status</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="d-flex align-items-center gap-2 border-top pt-3 mt-3 justify-content-end"
+              >
+                <button
+                  class="btn btn-outline-primary"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Cancel
+                </button>
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Apply
+                </button>
+              </div>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn btn-outline-light dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="assets/icons/download_icon_h.svg"
+                alt="filter"
+              />Download
+              <img src="assets/icons/chevron_dropdown.svg" alt="dropdown" />
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img src="assets/icons/excel_icon.svg" alt="back" />Excel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img src="assets/icons/pdf_icon.svg" alt="back" />PDF</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="d-flex align-items-center gap-2 border-bottom pb-3">
+        <button class="btn back-btn">
+          <img src="assets/icons/back_btn.svg" alt="back" />
+        </button>
+        <h3 class="m-0 header-title">Purchase Order (001)</h3>
+      </div>
+      <section class="table-wrapper">
+        <div class="table-responsive">
+          <table class="table custom-table table-borderless">
+            <thead>
+              <tr>
+                <th scope="col">SI No.</th>
+                <th scope="col" class="text-center">
+                  <input
+                    class="custom form-check-input"
+                    type="checkbox"
+                    id="checkboxNoLabel"
+                    value=""
+                    aria-label="..."
+                  />
+                </th>
+                <th scope="col">Unit</th>
+                <th scope="col">Document Title & No.</th>
+                <th scope="col" class="text-center">Vender Doc.</th>
+                <th scope="col">Revised Doc.</th>
+                <th scope="col" class="text-center">Revision</th>
+                <th scope="col" class="text-center">Upload Category</th>
+                <th scope="col" class="text-center">Tag No.</th>
+                <th scope="col" class="text-center">Upload Date</th>
+                <th scope="col" class="text-center">Department</th>
+                <th scope="col" class="text-center">Approval Date</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Row 1 -->
+              <tr>
+                <th scope="row">1</th>
+                <td class="text-center">
+                  <input
+                    class="custom form-check-input"
+                    type="checkbox"
+                    id="checkboxNoLabel"
+                    value=""
+                    aria-label="..."
+                  />
+                </td>
+                <td>510</td>
+                <td>
+                  <div class="d-flex align-items-center gap-1 mb-1">
+                    P&ID Steam: Purge System
+                  </div>
+                  <div class="d-flex align-items-center gap-1">
+                    <small class="text-muted">3003208-PS-PID</small>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <button class="btn blue-btn border-0">
+                    <img
+                      src="assets/icons/download_icon.svg"
+                      alt="download"
+                    />Download
+                  </button>
+                </td>
+                <td class="text-center">
+                  <button class="btn blue-btn border-0">
+                    <img
+                      src="assets/icons/download_icon.svg"
+                      alt="download"
+                    />Download
+                  </button>
+                  <button class="btn blue-btn border-0">
+                    <img src="assets/icons/comment_icon.svg" alt="view" />View
+                  </button>
+                </td>
+                <td class="text-center">4</td>
+                <td class="text-center">Scheduled</td>
+                <td class="text-center">NA</td>
+                <td class="text-center">30 Jan 2025</td>
+                <td class="text-center">PIPING</td>
+                <td class="text-center">30 Jan 2025</td>
+                <td>
+                  <div class="d-flex align-items-center gap-1 status">
+                    <span class="indicator success"></span> Approved
+                  </div>
+                </td>
+              </tr>
+              <!-- Row 2 -->
+              <tr>
+                <th scope="row">2</th>
+                <td class="text-center">
+                  <input
+                    class="custom form-check-input"
+                    type="checkbox"
+                    id="checkboxNoLabel"
+                    value=""
+                    aria-label="..."
+                  />
+                </td>
+                <td>510</td>
+                <td>
+                  <div class="d-flex align-items-center gap-1 mb-1">
+                    P&ID Steam: Purge System
+                  </div>
+                  <div class="d-flex align-items-center gap-1">
+                    <small class="text-muted">3003208-PS-PID</small>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <button class="btn blue-btn border-0">
+                    <img
+                      src="assets/icons/download_icon.svg"
+                      alt="download"
+                    />Download
+                  </button>
+                </td>
+                <td class="text-center">
+                  <button class="btn blue-btn border-0">
+                    <img
+                      src="assets/icons/download_icon.svg"
+                      alt="download"
+                    />Download
+                  </button>
+                  <button class="btn blue-btn border-0">
+                    <img src="assets/icons/comment_icon.svg" alt="view" />View
+                  </button>
+                </td>
+                <td class="text-center">4</td>
+                <td class="text-center">Scheduled</td>
+                <td class="text-center">NA</td>
+                <td class="text-center">29 Jan 2025</td>
+                <td class="text-center">PIPING</td>
+                <td class="text-center">29 Jan 2025</td>
+                <td>
+                  <div class="d-flex align-items-center gap-1 status">
+                    <span class="indicator danger"></span> Revise and Resubmit
+                  </div>
+                </td>
+              </tr>
+              <!-- Row 3 -->
+              <tr>
+                <th scope="row">3</th>
+                <td class="text-center">
+                  <input
+                    class="custom form-check-input"
+                    type="checkbox"
+                    id="checkboxNoLabel"
+                    value=""
+                    aria-label="..."
+                  />
+                </td>
+                <td>510</td>
+                <td>
+                  <div class="d-flex align-items-center gap-1 mb-1">
+                    P&ID Steam: Purge System
+                  </div>
+                  <div class="d-flex align-items-center gap-1">
+                    <small class="text-muted">3003208-PS-PID</small>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <button class="btn blue-btn border-0">
+                    <img
+                      src="assets/icons/download_icon.svg"
+                      alt="download"
+                    />Download
+                  </button>
+                </td>
+                <td class="text-center">
+                  <button class="btn blue-btn border-0">
+                    <img
+                      src="assets/icons/download_icon.svg"
+                      alt="download"
+                    />Download
+                  </button>
+                  <button class="btn blue-btn border-0">
+                    <img src="assets/icons/comment_icon.svg" alt="view" />View
+                  </button>
+                </td>
+                <td class="text-center">4</td>
+                <td class="text-center">Scheduled</td>
+                <td class="text-center">NA</td>
+                <td class="text-center">28 Jan 2025</td>
+                <td class="text-center">PIPING</td>
+                <td class="text-center">28 Jan 2025</td>
+                <td>
+                  <div class="d-flex align-items-center gap-1 status">
+                    <span class="indicator info"></span> Comments
+                  </div>
+                </td>
+              </tr>
+              <!-- Row 4 -->
+              <tr>
+                <th scope="row">4</th>
+                <td class="text-center">
+                  <input
+                    class="custom form-check-input"
+                    type="checkbox"
+                    id="checkboxNoLabel"
+                    value=""
+                    aria-label="..."
+                  />
+                </td>
+                <td>510</td>
+                <td>
+                  <div class="d-flex align-items-center gap-1 mb-1">
+                    P&ID Steam: Purge System
+                  </div>
+                  <div class="d-flex align-items-center gap-1">
+                    <small class="text-muted">3003208-PS-PID</small>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <button class="btn blue-btn border-0">
+                    <img
+                      src="assets/icons/download_icon.svg"
+                      alt="download"
+                    />Download
+                  </button>
+                </td>
+                <td class="text-center">
+                  <button class="btn blue-btn border-0">
+                    <img
+                      src="assets/icons/download_icon.svg"
+                      alt="download"
+                    />Download
+                  </button>
+                  <button class="btn blue-btn border-0">
+                    <img src="assets/icons/comment_icon.svg" alt="view" />View
+                  </button>
+                </td>
+                <td class="text-center">4</td>
+                <td class="text-center">Scheduled</td>
+                <td class="text-center">NA</td>
+                <td class="text-center">27 Jan 2025</td>
+                <td class="text-center">PIPING</td>
+                <td class="text-center">27 Jan 2025</td>
+                <td>
+                  <div class="d-flex align-items-center gap-1 status">
+                    <span class="indicator info"></span> Comments
+                  </div>
+                </td>
+              </tr>
+              <!-- Row 5 -->
+              <tr>
+                <th scope="row">5</th>
+                <td class="text-center">
+                  <input
+                    class="custom form-check-input"
+                    type="checkbox"
+                    id="checkboxNoLabel"
+                    value=""
+                    aria-label="..."
+                  />
+                </td>
+                <td>510</td>
+                <td>
+                  <div class="d-flex align-items-center gap-1 mb-1">
+                    P&ID Steam: Purge System
+                  </div>
+                  <div class="d-flex align-items-center gap-1">
+                    <small class="text-muted">3003208-PS-PID</small>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <button class="btn blue-btn border-0">
+                    <img
+                      src="assets/icons/download_icon.svg"
+                      alt="download"
+                    />Download
+                  </button>
+                </td>
+                <td class="text-center">
+                  <button class="btn blue-btn border-0">
+                    <img
+                      src="assets/icons/download_icon.svg"
+                      alt="download"
+                    />Download
+                  </button>
+                  <button class="btn blue-btn border-0">
+                    <img src="assets/icons/comment_icon.svg" alt="view" />View
+                  </button>
+                </td>
+                <td class="text-center">4</td>
+                <td class="text-center">Scheduled</td>
+                <td class="text-center">NA</td>
+                <td class="text-center">26 Jan 2025</td>
+                <td class="text-center">PIPING</td>
+                <td class="text-center">26 Jan 2025</td>
+                <td>
+                  <div class="d-flex align-items-center gap-1 status">
+                    <span class="indicator info"></span> Comments
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div
+          class="d-flex align-items-center table-pagination flex-wrap gap-3 justify-content-md-start justify-content-center"
+        >
+          <span class="text-muted d-inline-flex align-items-center gap-2">
+            Show
+            <select class="form-select" aria-label="Default select example">
+              <option selected>--</option>
+              <option value="1" selected>8</option>
+              <option value="2">16</option>
+              <option value="3">24</option>
+            </select>
+            entries</span
+          >
+
+          <div
+            class="d-flex align-items-center ms-auto flex-wrap justify-content-md-start justify-content-center"
+          >
+            <span class="text-muted me-3 mb-3 mb-md-0"
+              >Showing 8 of 100 results</span
+            >
+            <ul class="pagination m-0 custom-pagination align-items-center">
+              <li class="page-item">
+                <a class="page-link">
+                  <img
+                    src="assets/icons/chevro_left.svg"
+                    alt="icon"
+                  />Previous</a
+                >
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#"
+                  >Next <img src="assets/icons/chevro_right.svg" alt="icon"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="d-flex flex-row justify-content-center align-items-center m-0"
+    >
+      <p>@Copyright all right reserved</p>
+    </footer>
+
+    <div
+      class="offcanvas offcanvas-end"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel"
+    >
+      <div
+        class="d-flex align-items-center gap-2 border-bottom pb-3 m-3 justify-content-between"
+      >
+        <h3 class="header-title m-0" id="offcanvasWithBothOptionsLabel">
+          Upload Document
+        </h3>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body custom-floating-labels">
+        <div class="row g-3">
+          <!-- Document Title -->
+          <div class="col-12">
+            <div class="form-floating">
+              <select class="form-select">
+                <option selected>Scheduled</option>
+                <option value="1">Custom</option>
+              </select>
+              <label>Document Category</label>
+            </div>
+          </div>
+          <!-- Upload Date -->
+          <div class="col-12">
+            <div class="form-floating position-relative">
+              <input type="text" class="form-control" value="#456666" />
+              <label>Tag No.</label>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label
+              class="upload-box d-flex align-items-center justify-content-center"
+            >
+              <div
+                class="upload-content d-flex align-items-center justify-content-center"
+              >
+                <img src="assets/icons/upload_image.svg" alt="upload" />
+                <p class="m-0">
+                  <a href="#" id="click-upload">Click to upload</a> or drag and
+                  drop Maximum file size <strong>10 MB</strong>.
+                </p>
+              </div>
+            </label>
+            <input type="file" id="file-upload" hidden />
+          </div>
+
+          <div class="col-12">
+            <div class="progress-card">
+              <div class="d-flex align-items-center gap-2 w-100">
+                <img src="assets/icons/pdf_icon_color.svg" alt="pdf" />
+                <div>
+                  <div class="d-flex align-items-center gap-1">
+                    Document-1.pdf
+                  </div>
+                  <div class="d-flex align-items-center gap-1">
+                    <small class="text-muted">5 MB</small>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="btn-close ms-auto"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div
+                class="progress w-100 mt-2"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 25%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="d-flex align-items-center gap-2 border-top pt-3 m-3 justify-content-end"
+      >
+        <button
+          class="btn btn-outline-primary"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Cancel
+        </button>
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Apply
+        </button>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
