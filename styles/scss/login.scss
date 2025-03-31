@@ -16,10 +16,14 @@
 .login-header {
   font-weight: 700;
   font-size: 2rem;
-  line-height: 44px;
+  line-height: 2.75rem;
   color: #000000;
 }
-
+.login-header-sm {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
 .custom-tabs-login {
   display: flex;
   gap: 1rem;
@@ -77,7 +81,6 @@ body {
   background-position: center 100%;
   background-attachment: fixed;
 }
-
 @media screen and (min-width: 768px) {
   .right-login-col {
     height: 100vh;
@@ -93,4 +96,13 @@ body {
 
 .password.form-control{
   padding-right: 2.5rem !important;
+}
+
+.back-btn{
+  width: 2rem !important;
+  height: 2rem !important;
+  img{
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+  }
 }
