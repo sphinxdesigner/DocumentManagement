@@ -309,6 +309,10 @@ main {
   width: max-content;
 }
 
+.submenu {
+  margin-top: 0 !important;
+}
+
 .dropdown-item {
   display: flex;
   flex-direction: row;
@@ -330,7 +334,7 @@ main {
   border-bottom: none;
 }
 
-.custom-tabs .nav-link {
+.custom-tabs .nav-link, .nav-link-dropdown {
   display: flex;
   align-items: center;
   color: white;

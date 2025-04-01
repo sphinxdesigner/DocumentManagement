@@ -61,9 +61,7 @@
           </div>
         </div>
       </div>
-      <nav
-        class="nav-header d-flex align-items-center flex-wrap justify-content-md-between justify-content-center"
-      >
+      <nav class="nav-header d-flex align-items-center flex-wrap gap-3">
         <ul class="nav custom-tabs mb-4 mb-md-0">
           <li class="nav-item">
             <a class="nav-link" href="#">
@@ -78,10 +76,61 @@
             </a>
           </li>
         </ul>
+        <div class="d-flex align-items-center gap-3 flex-wrap mb-1 mb-md-0">
+          <div class="dropdown">
+            <a
+              class="nav-link-dropdown text-decoration-none gap-2"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="assets/icons/dashboard.svg" alt="Dashboard Icon" />
+              Access Control
+              <img src="assets/icons/chevron_dropdown.svg" alt="dropdown" />
+            </a>
+            <ul class="dropdown-menu w-100">
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img src="assets/icons/icon_user.svg" alt="back" />Users
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img src="assets/icons/icon_gear.svg" alt="back" />Roles</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <a
+              class="nav-link-dropdown text-decoration-none gap-2"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="assets/icons/dashboard.svg" alt="Dashboard Icon" />
+              Logs Management
+              <img src="assets/icons/chevron_dropdown.svg" alt="dropdown" />
+            </a>
+            <ul class="dropdown-menu w-100">
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img
+                    src="assets/icons/icon_dashboard.svg"
+                    alt="back"
+                  />Dashboard
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img src="assets/icons/calender_icon.svg" alt="back" />Logs
+                  by Date</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
-      
       <section class="table-wrapper">
         <div class="table-responsive">
           <table class="table custom-table table-borderless">
@@ -260,8 +309,6 @@
     >
       <p>@Copyright all right reserved</p>
     </footer>
-
-   
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/custom.js"></script>
