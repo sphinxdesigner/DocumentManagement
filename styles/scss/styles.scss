@@ -316,6 +316,19 @@ main {
   transform: translate(0%, -50%);
 }
 
+
+.eye-icon {
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.password.form-control{
+  padding-right: 2.5rem !important;
+}
+
+
 .back-btn {
   display: inline-flex;
   align-items: center;
@@ -344,7 +357,7 @@ main {
 }
 
 .dropdown-menu {
-  padding: 1rem 0.5rem;
+  padding: 1rem 0.5rem !important;
   background: #ffffff;
   border: 1px solid #edeff3 !important;
   box-shadow: -27px 23px 14px rgba(0, 0, 0, 0.01),
